@@ -1,0 +1,21 @@
+from turtle import*
+from colorsys import*
+bgcolor("black")#This is the background of your graphic.
+tracer(200)#This is how fast your graphics will print.
+h=0.7
+for i in range(450):#This changes the of how long your graphic.
+    c = hsv_to_rgb(h,1,1)
+    color(c)
+    h+=0.005
+    width(i//100+10)#This is the width of your graphic.
+    fillcolor(c)
+    left(200)#This changes the graphics depending on the number.
+    begin_fill()
+    forward(i*0.5)
+    circle(i*0.3)
+    end_fill()
+    right(90)#This chamges of how big your graphic.
+    forward(i*1.0)#This changes the shapes of graphic.
+    circle(i,90)
+    circle,60
+done()
